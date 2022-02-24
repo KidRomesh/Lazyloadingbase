@@ -1,0 +1,2 @@
+# Lazyloadingbase
+skeleton for hrms
