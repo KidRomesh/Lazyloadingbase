@@ -1,0 +1,27 @@
+<mat-drawer-container class="example-container" >
+    <mat-drawer style="background-color: blueviolet;" #drawer class="example-sidenav-content" opened mode="side">
+        <div>
+            <p>hai</p>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+                <button  mat-button (click)="!drawer.toggle()" mat-icon-button class="example-icon" >
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <span>My App</span>
+                <span class="example-spacer"></span>
+                <button mat-icon-button (click)="go()">
+                    <mat-icon>favorite</mat-icon>
+                </button>
+                <button mat-icon-button (click)="share()">
+                    <mat-icon>share</mat-icon>
+                </button>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <app-shared>
+        </app-shared>        
+    </mat-drawer-content>    
+</mat-drawer-container>
+
