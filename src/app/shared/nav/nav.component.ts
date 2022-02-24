@@ -16,7 +16,7 @@ export class NavComponent implements OnInit {
     this.router.navigate(['test']);
   }
   share(){
-    this.router.navigate(['employees'])
+    this.router.navigate(['/employees'])
   }
  
 
