@@ -1,11 +1,13 @@
 <mat-drawer-container>
-    <mat-drawer style="background-color: blueviolet;" #drawer class="example-sidenav-content" opened mode="side">
+    <mat-drawer style="background-color: blueviolet;" #drawer class="example-sidenav-content  mat-elevation-z6" 
+    [style.margin-right]="'3px'" opened mode="side">
         <div>
             <p>hai</p>
         </div>
     </mat-drawer>
     <mat-drawer-content>
-        <mat-toolbar color="primary" >
+        <mat-toolbar color="primary"  class="mat-elevation-z10" 
+        [style.margin-bottom]="'3px'" >
             <mat-toolbar-row>
                 <button mat-button (click)="!drawer.toggle()" mat-icon-button class="example-icon">
                     <mat-icon>menu</mat-icon>
@@ -20,14 +22,15 @@
                 </button>
             </mat-toolbar-row>
         </mat-toolbar>
-        <mat-toolbar  class="top">
+        <mat-toolbar class=" top mat-elevation-z10" 
+        [style.margin-bottom]="'3px'" >
             <mat-toolbar-row>
                 <div style="margin-top: 150px;">
                     <img src="..//..//../assets/gin.jpg" >
                 </div>
                 <span style="margin-right: 10px;"></span>
                 <div style="margin-top: 150px;">
-                    <h1 style="font-size:40px;">Welcome back John!</h1>
+                    <h1 style="font-size:40px;">Welcome back Romesh!</h1>
                     <button mat-icon-button  disabled style="margin-top: 10px; color: darkgrey;">
                         <mat-icon>
                             notifications
