@@ -6,6 +6,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatCommonModule} from '@angular/material/core';
 
 
 import { SharedRoutingModule } from './shared-routing.module';
@@ -27,7 +29,9 @@ import { TestComponent } from './test/test.component';
     MatGridListModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatChipsModule,
+    MatCommonModule
   ]
 })
 export class SharedModule { }

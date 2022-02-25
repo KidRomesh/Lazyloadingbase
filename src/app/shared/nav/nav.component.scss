@@ -5,6 +5,22 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  .raisedbox { 
+    box-shadow: 5px 5px lightslategray;
+}
+.mat-toolbar {
+  position: relative;
+}
   .example-spacer {
     flex: 1 1 auto;
   }
+  .top{
+    height: 180px;
+    width: 100%;
+    border-bottom: 5px;
+}
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
