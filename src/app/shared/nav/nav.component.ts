@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class NavComponent implements OnInit {
 
+  message: number= 3;
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {

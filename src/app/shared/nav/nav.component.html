@@ -1,41 +1,39 @@
-<mat-drawer-container>
-    <mat-drawer style="background-color: blueviolet;" #drawer class="example-sidenav-content  mat-elevation-z6" 
-    [style.margin-right]="'3px'" opened mode="side">
+<mat-drawer-container style="height: 100%; width: 100%;" >
+    <mat-drawer  #drawer class="example-sidenav-content  mat-elevation-z3" opened mode="side">
         <div>
             <p>hai</p>
         </div>
     </mat-drawer>
-    <mat-drawer-content>
-        <mat-toolbar color="primary"  class="mat-elevation-z10" 
-        [style.margin-bottom]="'3px'" >
+    <mat-drawer-content style="height: 100%;">
+        <mat-toolbar style="background-color: white;"  class=" mat-elevation-z3" 
+        [style.margin-bottom]="'2px'">
             <mat-toolbar-row>
                 <button mat-button (click)="!drawer.toggle()" mat-icon-button class="example-icon">
                     <mat-icon>menu</mat-icon>
                 </button>
-                <span>My App</span>
+                <span>Yorozuya</span>
                 <span class="example-spacer"></span>
                 <button mat-icon-button (click)="go()">
                     <mat-icon>favorite</mat-icon>
                 </button>
                 <button mat-icon-button (click)="share()">
-                    <mat-icon>share</mat-icon>
+                    <mat-icon>person</mat-icon>
                 </button>
             </mat-toolbar-row>
         </mat-toolbar>
-        <mat-toolbar class=" top mat-elevation-z10" 
-        [style.margin-bottom]="'3px'" >
+        <mat-toolbar  style ="background-color: white;"class=" top mat-elevation-z2">
             <mat-toolbar-row>
                 <div style="margin-top: 150px;">
                     <img src="..//..//../assets/gin.jpg" >
                 </div>
                 <span style="margin-right: 10px;"></span>
                 <div style="margin-top: 150px;">
-                    <h1 style="font-size:40px;">Welcome back Romesh!</h1>
+                    <h1 style="font-size:40px;">Welcome back Gintoki!</h1>
                     <button mat-icon-button  disabled style="margin-top: 10px; color: darkgrey;">
                         <mat-icon>
                             notifications
                         </mat-icon>
-                        You have 2 new tasks and 1 message.
+                        You have 2 new tasks and{{message}} message.
                     </button>
                 </div>
                 <span class="example-spacer"></span>
@@ -52,8 +50,10 @@
                 </div>
             </mat-toolbar-row>
         </mat-toolbar>
-        <app-shared>
-        </app-shared>
+        
+            <app-shared>
+            </app-shared>
+
 
     </mat-drawer-content>
 </mat-drawer-container>
